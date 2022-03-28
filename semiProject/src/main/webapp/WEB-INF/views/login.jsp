@@ -126,7 +126,7 @@
 								<h2>New to our Shop?</h2>
 								<p>There are advances being made in science and technology
 									everyday, and a good example of this is the</p>
-								<a href="createAccount.do" class="btn_3">Create an Account</a>
+								<a href="signUp.do" class="btn_3">Create an Account</a>
 							</div>
 						</div>
 					</div>

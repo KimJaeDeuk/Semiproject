@@ -226,6 +226,7 @@
 	<!-- Search model end -->
 
 	<!-- JS here -->
+
 	<script
 		src="/semiProject/resources/assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<!-- Jquery, Popper, Bootstrap -->
@@ -261,5 +262,6 @@
 	<!-- Jquery Plugins, main Jquery -->
 	<script src="/semiProject/resources/assets/js/plugins.js"></script>
 	<script src="/semiProject/resources/assets/js/main.js"></script>
+
 </body>
 </html>

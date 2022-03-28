@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<!doctype html>
+<html lang="zxx">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,8 +10,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="manifest" href="site.webmanifest">
 <link rel="shortcut icon" type="image/x-icon"
-	href="/semiProject/resources/assets/img/favicon.ico">
+	href="assets/img/favicon.ico">
 
+<!-- CSS here -->
 <link rel="stylesheet"
 	href="/semiProject/resources/assets/css/bootstrap.min.css">
 <link rel="stylesheet"
@@ -36,18 +37,6 @@
 	href="/semiProject/resources/assets/css/style.css">
 </head>
 <body>
-<body>
-	<!--? Preloader Start -->
-	<div id="preloader-active">
-		<div
-			class="preloader d-flex align-items-center justify-content-center">
-			<div class="preloader-inner position-relative">
-				<div class="preloader-circle"></div>
-				<div class="preloader-img pere-text">홈페이지 이미지 사진 공간</div>
-			</div>
-		</div>
-	</div>
-	<!-- Preloader Start -->
 	<header>
 		<!-- Header Start -->
 		<div class="header-area">
@@ -56,8 +45,8 @@
 					<div class="menu-wrapper">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img
-								src="/semiProject/resources/assets/img/logo/logo.png" alt=""></a>
+							<a href="index.html"><img src="assets/img/logo/logo.png"
+								alt=""></a>
 						</div>
 						<!-- Main-menu -->
 						<div class="main-menu d-none d-lg-block">
@@ -65,21 +54,26 @@
 								<ul id="navigation">
 									<li><a href="index.html">Home</a></li>
 									<li><a href="shop.html">shop</a></li>
-									<li><a href="about.html">computer</a></li>
-									<li><a href="#">tablets</a> <!-- <ul class="submenu">
-                                            <li><a href="shop.html"> Product list</a></li>
-                                            <li><a href="product_details.html"> Product Details</a></li>
-                                        </ul> --></li>
-									<li><a href="blog.html">Drones&Camera</a>
+									<li><a href="about.html">about</a></li>
+									<li class="hot"><a href="#">Latest</a>
+										<ul class="submenu">
+											<li><a href="shop.html"> Product list</a></li>
+											<li><a href="product_details.html"> Product Details</a></li>
+										</ul></li>
+									<li><a href="blog.html">Blog</a>
 										<ul class="submenu">
 											<li><a href="blog.html">Blog</a></li>
 											<li><a href="blog-details.html">Blog Details</a></li>
 										</ul></li>
-									<li><a href="#">Audio</a></li>
-									<li><a href="contact.html">Mobile</a></li>
-									<li><a href="contact.html">공지사항</a></li>
-									<li><a href="contact.html">Q&A</a></li>
-									<li><a href="contact.html">지도</a></li>
+									<li><a href="#">Pages</a>
+										<ul class="submenu">
+											<li><a href="login.html">Login</a></li>
+											<li><a href="cart.html">Cart</a></li>
+											<li><a href="elements.html">Element</a></li>
+											<li><a href="confirmation.html">Confirmation</a></li>
+											<li><a href="checkout.html">Product Checkout</a></li>
+										</ul></li>
+									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -91,7 +85,7 @@
 										<span class="flaticon-search"></span>
 									</div>
 								</li>
-								<li><a href="login.do"><span class="flaticon-user"></span></a></li>
+								<li><a href="login.html"><span class="flaticon-user"></span></a></li>
 								<li><a href="cart.html"><span
 										class="flaticon-shopping-cart"></span></a></li>
 							</ul>
@@ -107,80 +101,40 @@
 		<!-- Header End -->
 	</header>
 	<main>
-		<!--? slider Area Start -->
+		<!-- Hero Area Start-->
 		<div class="slider-area ">
-			<div class="slider-active">
-				<!-- Single Slider -->
-				<div
-					class="single-slider slider-height d-flex align-items-center slide-bg">
-					<div class="container">
-						<div class="row justify-content-between align-items-center">
-							<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
-								<div class="hero__caption">
-									<h1 data-animation="fadeInLeft" data-delay=".4s"
-										data-duration="2000ms">Select Your New Perfect Style</h1>
-									<p data-animation="fadeInLeft" data-delay=".7s"
-										data-duration="2000ms">Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-										commodo consequat is aute irure.</p>
-									<!-- Hero-btn -->
-									<div class="hero__btn" data-animation="fadeInLeft"
-										data-delay=".8s" data-duration="2000ms">
-										<a href="industries.html" class="btn hero-btn">Shop Now</a>
-									</div>
-								</div>
-							</div>
-							<div
-								class="col-xl-3 col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
-								<div class="hero__img" data-animation="bounceIn"
-									data-delay=".4s">
-									<img src="assets/img/hero/watch.png" alt="" class=" heartbeat">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Single Slider -->
-				<div
-					class="single-slider slider-height d-flex align-items-center slide-bg">
-					<div class="container">
-						<div class="row justify-content-between align-items-center">
-							<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
-								<div class="hero__caption">
-									<h1 data-animation="fadeInLeft" data-delay=".4s"
-										data-duration="2000ms">Select Your New Perfect Style</h1>
-									<p data-animation="fadeInLeft" data-delay=".7s"
-										data-duration="2000ms">Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-										commodo consequat is aute irure.</p>
-									<!-- Hero-btn -->
-									<div class="hero__btn" data-animation="fadeInLeft"
-										data-delay=".8s" data-duration="2000ms">
-										<a href="industries.html" class="btn hero-btn">Shop Now</a>
-									</div>
-								</div>
-							</div>
-							<div
-								class="col-xl-3 col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
-								<div class="hero__img" data-animation="bounceIn"
-									data-delay=".4s">
-									<img src="/semiProject/resources/assets/img/hero/watch.png"
-										alt="" class=" heartbeat">
-								</div>
+			<div class="single-slider slider-height2 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="hero-cap text-center">
+								<h2>Sign Up Complete!</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- slider Area End-->
-		<!-- ? New Product Start -->
-
-		<!-- Shop Method End-->
+		<!-- Hero Area End-->
+		<!--================login_part Area =================-->
+		<section class="login_part section_padding ">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-12">
+						<div class="login_part_text text-center">
+							<div class="login_part_text_iner">
+							
+								<a href="main.do" class="btn_3">Go to MainPage</a>
+								<a href="login.do" class="btn_3">Go to Log In</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================login_part end =================-->
 	</main>
 	<footer>
-		<!-- Footer Start-->
-
 		<!-- Footer bottom -->
 		<div class="row align-items-center">
 			<div class="col-xl-7 col-lg-8 col-md-7">
@@ -226,6 +180,7 @@
 	<!-- Search model end -->
 
 	<!-- JS here -->
+
 	<script
 		src="/semiProject/resources/assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<!-- Jquery, Popper, Bootstrap -->
@@ -243,13 +198,13 @@
 	<!-- One Page, Animated-HeadLin -->
 	<script src="/semiProject/resources/assets/js/wow.min.js"></script>
 	<script src="/semiProject/resources/assets/js/animated.headline.js"></script>
-	<script src="/semiProject/resources/assets/js/jquery.magnific-popup.js"></script>
 
-	<!-- Scrollup, nice-select, sticky -->
+	<!-- Scroll up, nice-select, sticky -->
 	<script src="/semiProject/resources/assets/js/jquery.scrollUp.min.js"></script>
 	<script
 		src="/semiProject/resources/assets/js/jquery.nice-select.min.js"></script>
 	<script src="/semiProject/resources/assets/js/jquery.sticky.js"></script>
+	<script src="/semiProject/resources/assets/js/jquery.magnific-popup.js"></script>
 
 	<!-- contact js -->
 	<script src="/semiProject/resources/assets/js/contact.js"></script>
@@ -261,5 +216,7 @@
 	<!-- Jquery Plugins, main Jquery -->
 	<script src="/semiProject/resources/assets/js/plugins.js"></script>
 	<script src="/semiProject/resources/assets/js/main.js"></script>
+
 </body>
+
 </html>
