@@ -1,3 +1,9 @@
+변경사항
+customer_rrn number(13), ALTER TABLE customer modfiy customer_rrn char(14)
+customer_tel char(11), ALTER TABLE customer modify customer_tel varchar(13)
+p_price varchar2(100), ALTER TABLE product modify p_price number
+p_name NUMBER, ALTER TABLE product modify p_name varchar2(100)
+
 계정생성하기
 cmd 열기
 1)sqlplus 명령어 실행 후 
@@ -52,7 +58,6 @@ CREATE TABLE product (
 	p_brand varchar2(100), /* P_BRAND */
 	p_count NUMBER, /* P_Count */
 	p_date DATE, /* P_date */
-	p_hits NUMBER, /* p_hits */
 	p_color varchar2(15), /* 새 컬럼 */
 	category_code VARCHAR2(10) /* Category_code */
 );

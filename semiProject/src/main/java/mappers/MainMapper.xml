@@ -2,12 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="MainDAO">
-	<select id="loginCheck" resultType="CustomerVO">
-		      select *
-		FROM customer
-		WHERE customer_id = #{customerId} and
-		customer_pass = #{customerPass}
-		    
+	<select id="loginCheck" resultType="CustomerVO" parameterType="CustomerVO">
+		SELECT c.*, d.*
+		FROM CUSTOMER c inner join d_address d
+			ON c.customer_no = d.customer_no
+		WHERE customer_id = #{customerId} 
+			and customer_pass = #{customerPass}
 	</select>
 
 	<insert id="createAccount" parameterType="CustomerVO">
@@ -29,8 +29,7 @@
 		)
 		INTO
 		D_ADDRESS(customer_no, c_addr1,c_addr2,c_addr3)
-		VALUES(cust_no_seq.nextval,#{customerAddr1}, #{customerAddr2},
-		#{customerAddr3})
+		VALUES(cust_no_seq.nextval,#{cAddr1}, #{cAddr2}, #{cAddr3})
 		SELECT *
 		FROM dual
 	</insert>

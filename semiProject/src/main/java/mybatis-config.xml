@@ -11,8 +11,8 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 
     <settings> 
-    <setting name="cacheEnabled" value="false" />
-    <setting name="jdbcTypeForNull" value="NULL" />
-</settings>
+    	<setting name="mapUnderscoreToCamelCase" value="true"/>
+    	<setting name="jdbcTypeForNull" value="NULL"/>
+	</settings>
 
 </configuration>
